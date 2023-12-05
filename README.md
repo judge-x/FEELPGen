@@ -69,5 +69,5 @@ python main_centerlized.py --dataset celeb-user20-agg100 --algorithm FedProx --b
 
 
 
-## Refer as
-https://github.com/zhuangdizhu/FeedPGen/blob/main/FLAlgorithms/servers/serverpFeedPGen.py
+## Thanks Refer as
+https://github.com/zhuangdizhu/FedGen)https://github.com/zhuangdizhu/FedGen
