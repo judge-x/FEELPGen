@@ -27,6 +27,7 @@ python generate_niid_dirichlet.py --sampling_ratio 0.1 --alpha 0.1 --n_user 20
 ## Run Experiments: 
 '''
 # mnist
+<pre><code>
 python main.py --dataset Mnist-alpha0.5-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen
 
 python main.py --dataset Mnist-alpha0.1-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen
@@ -34,10 +35,11 @@ python main.py --dataset Mnist-alpha0.1-ratio0.5 --algorithm FeedPGen --batch_si
 python main.py --dataset Mnist-alpha0.05-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen
 
 python main.py --dataset Mnist-alpha0.05-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen+
-
+</code></pre>
 
 
 # emnist
+<pre><code>
 python main.py --dataset EMnist-alpha0.5-ratio0.5 --algorithm FedAvg --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg
 
 python main.py --dataset EMnist-alpha0.5-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg
@@ -45,8 +47,10 @@ python main.py --dataset EMnist-alpha0.5-ratio0.5 --algorithm FeedPGen --batch_s
 python main.py --dataset EMnist-alpha0.5-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen
 
 python main.py --dataset EMnist-alpha0.05-ratio0.5 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen+
+</code></pre>
 
 # celeba
+<pre><code>
 python main.py --dataset celeb-user20-agg50 --algorithm FedAvg --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg
 
 python main.py --dataset celeb-user20-agg100 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg
@@ -54,20 +58,22 @@ python main.py --dataset celeb-user20-agg100 --algorithm FeedPGen --batch_size 3
 python main.py --dataset celeb-user20-agg100 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen
 
 python main.py --dataset celeb-user20-agg100 --algorithm FeedPGen --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FeedPGen+ --gpu_idx 2
-
+</code></pre>
 
 #run compare
 # FedForx-h
+<pre><code>
 python main.py --dataset celeb-user20-agg100 --algorithm FedProx --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg
 
 python main.py --dataset Mnist-alpha0.05-ratio0.5 --algorithm FedProx --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg
 
 python main.py --dataset EMnist-alpha0.1-ratio0.5 --algorithm FedProx --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1 --total_algorithm FedAvg --gpu_idx 3
+</code></pre>
 
 # FedProx-c
+<pre><code>
 python main_centerlized.py --dataset celeb-user20-agg100 --algorithm FedProx --batch_size 32 --num_glo_iters 50 --num_mid_iters 5 --local_epochs 20 --num_users 10 --lamda 1 --learning_rate 0.01 --model cnn --times 1
-
-
+</code></pre>
 
 ## Thanks Refer as
 https://github.com/zhuangdizhu/FedGen)https://github.com/zhuangdizhu/FedGen
