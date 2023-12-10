@@ -2,8 +2,8 @@
 
 Research code that accompanies the paper []().
 It contains implementation of the following algorithms:
-* **FedAvg** ([paper](https://ieeexplore.ieee.org/document/9148862))
-* **FedProx** ([paper](https://proceedings.mlsys.org/paper_files/paper/2020/hash/1f5fe83998a09396ebe6477d9475ba0c-Abstract.html)).
+* **FedAvg-c/FedAvg-h** ([paper](https://ieeexplore.ieee.org/document/9148862))
+* **FedProx-c/FedProx-h** ([paper](https://proceedings.mlsys.org/paper_files/paper/2020/hash/1f5fe83998a09396ebe6477d9475ba0c-Abstract.html)).
 * **HierFAVG** ([paper])(https://ieeexplore.ieee.org/abstract/document/9148862/)which represent as FedAvg+FedAvg
 * **SD-FEEL** ([paper](https://ieeexplore.ieee.org/document/10059225)).
 
